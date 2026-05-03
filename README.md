@@ -1,8 +1,4 @@
-## Hi there 👋
-
-I'm Kenmar
-
-Here are some ideas to get you started:
+## Hi there 👋 I'm Ken
 
 - 🔭 I’m currently working on a Dysarthria Automatic Speech Recognition App
 - 🌱 I’m currently learning TypeScript
