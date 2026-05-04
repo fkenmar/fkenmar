@@ -7,5 +7,5 @@
 - 💬 Ask me about any of my projects
 - 📫 How to reach me: kenmarfrancisco9@gmail.com
 - 😄 Pronouns: he/him
-- ⚡ Fun fact: My favorite game is Rimworld
+- ⚡ Fun fact: I have atleast 500 hours on any simulation game
 
