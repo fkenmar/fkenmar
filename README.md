@@ -1,4 +1,4 @@
-## Hi there 👋 I'm Ken (please no more Barbie jokes)
+## Hi there 👋 I'm Ken
 
 - 🎙️ I’m currently working on a Dysarthria Automatic Speech Recognition App
 - 💪 I’m also learning how to use CANDO and biomedical basics for my research on HIV muscle wasting
