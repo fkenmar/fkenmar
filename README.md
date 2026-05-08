@@ -1,6 +1,2 @@
 ## Hi there 👋 I'm Ken
 
-- 🎙️ I’m currently working on a Dysarthria Automatic Speech Recognition App
-- 💪 I’m also learning how to use CANDO and biomedical basics for my research on HIV muscle wasting
-- 📭 How to reach me: kenmarfrancisco9@gmail.com 
-
