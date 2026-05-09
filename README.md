@@ -1,2 +1,4 @@
 ## Hi there 👋 I'm Ken
-Check out my projects!
+
+I like making AI apps and self-teaching coding niches.
+
