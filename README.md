@@ -1,4 +1,4 @@
-## Hi there 👋 I'm Ken
+## About me
 
 Agentic Engineer and Machine Learning Engineer
 
