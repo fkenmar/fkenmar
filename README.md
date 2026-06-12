@@ -2,7 +2,7 @@
 
 Agentic Engineer and Machine Learning Engineer
 
-I been building forums and Minecraft mods since I was in high school and now I'm a vibe coder 85-90% of the time as a senior in college
+Found Cheat Engine and learned how to edit HEXADECIMALS in elementary school, then started building forums and Minecraft mods in high school and now I'm a vibe coder 85-90% of the time as a senior in college
 
 Why Agentic Engineering?
 I think from growing up around code I know the gaps and roles that needs to be filled when building like I was mostly a solo builder but wished that person xyz did xyz for me and so on.
