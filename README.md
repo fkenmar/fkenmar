@@ -1,75 +1,28 @@
-# Kenmar Francisco
+### Hey, I'm Kenmar Francisco
 
-**AI / ML Engineer.** I build agents — and the eval infrastructure that tells me whether they actually work.
-CS (AI concentration) at the University at Buffalo · U.S. Citizen.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fkenmar-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fkenmar/) [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:kenmarfrancisco9@gmail.com) [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-knmrfr-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/knmrfr)
 
-I've been taking software apart since elementary school: Cheat Engine and hex edits, then forums and
-Minecraft mods in high school. These days it's AI agents and the harnesses that keep them honest. What I
-took from doing ML the long way — *Hands-On Machine Learning*, cover to cover — is that no architecture is
-*correct* for a task. A model is a generalization, so the work stays half analytic (read the data, run the
-experiment) and half intuition. I like that it keeps a human in the loop.
+**AI / ML engineer** building agents — and the eval infrastructure that proves they actually work. CS (AI concentration) at the University at Buffalo · U.S. Citizen. Currently forward-deploying agent workflows at Koi AgeTech Ventures and doing ML/bioinformatics research in Professor Ram Samudrala's lab. Recent: a [deepfake detector](https://github.com/fkenmar/Deepfake-Detector) at **98% ROC-AUC** on 300k+ images ([live demo](https://huggingface.co/spaces/knmrfr/deepfake-detector-demo)), and [RepoBrain](https://github.com/fkenmar/RepoBrain), a Rust codebase-mapper that **cut agent turns 41–43%**.
 
-## Experience
+#### Experience
 
-**Forward Deployed Engineer Intern — Koi AgeTech Ventures** · 2026–present
-Building PDF-to-dataset agent workflows with AI governance over 100k+-record healthcare datasets — schema
-mapping, drug-data API integration, extraction-confidence thresholds, and patient–drug risk logic.
+- **Forward Deployed Engineer Intern — Koi AgeTech Ventures** · 2026–present — PDF-to-dataset agent workflows with AI governance over 100k+-record healthcare datasets: schema mapping, drug-data API integration, extraction-confidence thresholds, patient–drug risk logic.
+- **ML & Bioinformatics Researcher — University at Buffalo** *(Professor Ram Samudrala)* · 2026–present — ranking therapeutic candidates for muscle-wasting via the CANDO platform + DiffDock docking; investigating frequency-domain (FFT) features for model robustness and generalization.
+- **AI Data Manager — DigitCells** · 2026–present — validated 2,500+ AI-generated pathology outputs across 25,000+ clinical fields at **99%+ review accuracy**, resolving 500+ model/metadata inconsistencies in HIPAA-conscious workflows.
+- **Software Engineer — Body Alliance Physical Therapy** · 2025–2026 — built an AI movement-analysis observer giving therapists real-time feedback during PT sessions: **+15% patient outcomes, +20% engagement**.
 
-**ML & Bioinformatics Researcher — University at Buffalo** (Professor Ram Samudrala) · 2026–present
-Ranking therapeutic candidates for muscle-wasting with the CANDO platform and DiffDock molecular docking,
-and investigating frequency-domain (FFT) feature methods to improve model robustness and generalization.
+#### Building
 
-**AI Data Manager — DigitCells** · 2026–present
-Validated 2,500+ AI-generated pathology outputs across 25,000+ clinical fields at 99%+ review accuracy,
-resolving 500+ model/metadata inconsistencies in HIPAA-conscious workflows.
+- **[Deepfake Detector](https://github.com/fkenmar/Deepfake-Detector)** · [live demo](https://huggingface.co/spaces/knmrfr/deepfake-detector-demo) — two-branch fusion classifier: a DoRA-fine-tuned CLIP ViT-L/14 backbone fused with a CNN over the 2D FFT magnitude spectrum, trained SupCon + cross-entropy. **98% ROC-AUC on 300k+ images**, improved cross-generator generalization, featured in Handshake's Learn Hub. *PyTorch · PEFT (DoRA) · multimodal fusion · deployed*
+- **Medlee** *(private)* — multi-agent medication-safety pipeline for geriatric polypharmacy on one rule: **structured sources are the source of truth; the LLM only interprets**. Five Claude Sonnet agents read only orchestrator-fetched RxNorm/safety-DB records and emit pydantic-validated, individually-cited flags; a deterministic oversight layer scores every run, retries the weakest agent once, then escalates to human review or an Opus spot-check that fails closed. *Multi-agent orchestration · LLM-as-interpreter · deterministic eval*
+- **[RepoBrain](https://github.com/fkenmar/RepoBrain)** — Rust CLI that compiles a codebase into a token-budgeted structural map for LLM coding agents: tree-sitter parse → personalized PageRank over the import/reference graph → packed to a token budget, so a 50k-LOC repo becomes a ~2k-token summary an agent holds in context. On a 10-task Claude Code benchmark, **cut agent turns 41–43%**. *Rust · tree-sitter · agent tooling · benchmarked*
+- **[drift](https://github.com/fkenmar/drift)** — an agentic-AI eval harness disguised as a colony sim: your colonists are AI agents, the world is a noisy eval, and a Storyteller throws prompt injection, drift, and deprecations at your fleet while you keep it shipping under budget. Zero-dependency Python core + FastAPI streaming server + Next.js front end, built eval-first, TDD. *Python · FastAPI · Next.js · evals*
+- **[NYPD Scheduling Optimizer](https://github.com/fkenmar/NYPD-Scheduling-Optimizer)** · [live dashboard](https://fkenmar.github.io/NYPD-Scheduling-Optimizer/) — K-Means clustering + LightGBM predicting precinct-level crime demand by time of day from ~2.3M NYC Open Data records (**0.908 test accuracy**), feeding a weekly-refreshed interactive dashboard. *PySpark · end-to-end ML*
+- **[BatMan](https://github.com/fkenmar/BatMan)** — Fourier-native, phase-preserving baseline for automatic modulation classification on RadioML 2018.01A: complex I/Q samples in, an FFT *inside* the model, complex-valued spectral residual blocks reported down to −20 dB SNR. Groundwork for a drone-detection / RF-jamming agent. *DSP × deep learning · complex-valued nets*
+- **DigitCells OCR pipeline** *(private)* — custom OCR + validation pipeline turning scanned pathology records into analysis-ready Excel: de-identifying pseudo-IDs, auto-assigned L1–L3 classification, controlled-vocabulary validation, and pathologist-review flags for missing/out-of-vocab/questionable values. *Python · OCR · clinical data pipelines*
 
-**Software Engineer — Body Alliance Physical Therapy** · 2025–2026
-Built an AI movement-analysis observer giving therapists real-time feedback during PT sessions —
-**+15% patient outcomes, +20% engagement.**
+#### Reach me
 
-## Selected work
-
-**[Deepfake Detector](https://github.com/fkenmar/Deepfake-Detector)** ·
-[live demo](https://huggingface.co/spaces/knmrfr/deepfake-detector-demo) — A two-branch fusion classifier:
-a DoRA-fine-tuned CLIP ViT-L/14 backbone (spatial features) fused with a CNN over the 2D FFT magnitude
-spectrum (frequency artifacts), trained SupCon + cross-entropy. **98% ROC-AUC on 300k+ images**, improved
-cross-generator generalization, featured in Handshake's Learn Hub. Flask API + React/Vite, deployed on
-Hugging Face Spaces. *PyTorch · PEFT (DoRA) · multimodal fusion · deployed*
-
-**Medlee** *(private)* — A multi-agent medication-safety pipeline for geriatric polypharmacy, built on one
-rule: **structured sources are the source of truth; the LLM only interprets.** Five Claude Sonnet agents
-(normalize → drug-interaction → Beers 2023 → clinical context → synthesize) read only orchestrator-fetched
-RxNorm / safety-DB records and emit pydantic-validated, individually-cited flags — so a hallucinated drug
-code can never reach the database. A deterministic oversight layer scores every run (geometric mean of
-schema validity, inter-agent agreement, citation coverage, and signal coverage; threshold 0.85), retries
-the weakest agent once with targeted feedback, then escalates to human review or an Opus spot-check that
-fails closed. Every agent has a deterministic rule-based twin, so the LLM scaffolding swaps out
-slot-by-slot without touching anything downstream. *Multi-agent orchestration · LLM-as-interpreter ·
-deterministic eval/oversight · RxNorm · pydantic*
-
-**[NYPD Scheduling Optimizer](https://github.com/fkenmar/NYPD-Scheduling-Optimizer)** ·
-[live dashboard](https://fkenmar.github.io/NYPD-Scheduling-Optimizer/) — K-Means clustering + LightGBM to
-predict precinct-level crime demand by time of day from ~2.3M NYC Open Data records — **0.908 test
-accuracy** — feeding a weekly-refreshed interactive dashboard. *Data-intensive ML · PySpark · end-to-end*
-
-**DigitCells OCR pipeline** *(private)* — A custom OCR + validation pipeline that turns scanned pathology
-records into analysis-ready Excel. Generates consistent pseudo-IDs for de-identification, auto-assigns the
-L1–L3 classification hierarchy and codes, and validates every value against a controlled classification
-vocabulary — flagging missing files, out-of-vocab values, and questionable readings for pathologist
-review. Folds full L2 descriptions and patient context into cell comments and tallies category counts per
-level. *Python · OCR · clinical data pipelines · HIPAA-conscious*
-
-## How I think about the work
-
-- **Evals before features.** If I can't measure it, I don't trust it — hence the harness in *drift* and
-  the benchmark in *RepoBrain*.
-- **Ship the thinnest real thing.** A deployed demo beats a slide. Most of the above has one.
-- **TDD where correctness matters,** demos where speed of learning matters.
-
-## Reach me
-
-- **Email** — kenmarfrancisco9@gmail.com · kenmarfr@buffalo.edu
-- **LinkedIn** — [linkedin.com/in/fkenmar](https://www.linkedin.com/in/fkenmar/)
-- **Résumé** — [resume.pdf](resume.pdf)
+kenmarfrancisco9@gmail.com · kenmarfr@buffalo.edu · [résumé](resume.pdf)
 
 <sub>Python · Rust · PyTorch · scikit-learn · PySpark · FastAPI · Next.js · React · tree-sitter · Docker</sub>
