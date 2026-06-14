@@ -47,18 +47,6 @@ fails closed. Every agent has a deterministic rule-based twin, so the LLM scaffo
 slot-by-slot without touching anything downstream. *Multi-agent orchestration · LLM-as-interpreter ·
 deterministic eval/oversight · RxNorm · pydantic*
 
-**[RepoBrain](https://github.com/fkenmar/RepoBrain)** — A Rust CLI that compiles a codebase into a
-token-budgeted structural map for LLM coding agents: tree-sitter parse → personalized PageRank over the
-import/reference graph → packed to a token budget, so a 50k-LOC repo becomes a ~2k-token summary an agent
-holds entirely in context. The thesis is measured, not assumed — on a 10-task Claude Code benchmark,
-injecting the map cut agent turns **41–43%**. *Rust · tree-sitter · agent tooling · benchmarked*
-
-**[drift](https://github.com/fkenmar/drift)** — An agentic-AI eval harness disguised as a colony sim.
-Your colonists are AI agents, the world is a noisy eval, and a Storyteller throws prompt injection, drift,
-and deprecations at your fleet while you keep it shipping under budget. Under the hood: a zero-dependency
-Python core (mock backend, graders, scoring), a FastAPI streaming server, and a Next.js front end. Built
-eval-first, TDD. *Python · FastAPI · Next.js · evals*
-
 **[NYPD Scheduling Optimizer](https://github.com/fkenmar/NYPD-Scheduling-Optimizer)** ·
 [live dashboard](https://fkenmar.github.io/NYPD-Scheduling-Optimizer/) — K-Means clustering + LightGBM to
 predict precinct-level crime demand by time of day from ~2.3M NYC Open Data records — **0.908 test
