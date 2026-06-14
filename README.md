@@ -58,11 +58,6 @@ automatic modulation classification on RadioML 2018.01A: the network takes compl
 FFT *inside* the model, and feeds complex-valued spectral residual blocks, reported down to −20 dB SNR.
 Groundwork for a drone-detection / RF-jamming agent. *DSP × deep learning · complex-valued nets*
 
-**[RehabScribe](https://github.com/fkenmar/RehabScribe)** — A React + FastAPI SOAP-note engine for
-outpatient physical therapy: PT-shorthand expansion, deterministic CMS 8-minute-rule billing, and an
-unsupported-claim ("did the model make this up?") review pass before approval. Built as a real clinic
-prototype. *Applied LLM product · compliance-aware*
-
 ## How I think about the work
 
 - **Evals before features.** If I can't measure it, I don't trust it — hence the harness in *drift* and
