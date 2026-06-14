@@ -36,6 +36,17 @@ spectrum (frequency artifacts), trained SupCon + cross-entropy. **98% ROC-AUC on
 cross-generator generalization, featured in Handshake's Learn Hub. Flask API + React/Vite, deployed on
 Hugging Face Spaces. *PyTorch · PEFT (DoRA) · multimodal fusion · deployed*
 
+**Medlee** *(private)* — A multi-agent medication-safety pipeline for geriatric polypharmacy, built on one
+rule: **structured sources are the source of truth; the LLM only interprets.** Five Claude Sonnet agents
+(normalize → drug-interaction → Beers 2023 → clinical context → synthesize) read only orchestrator-fetched
+RxNorm / safety-DB records and emit pydantic-validated, individually-cited flags — so a hallucinated drug
+code can never reach the database. A deterministic oversight layer scores every run (geometric mean of
+schema validity, inter-agent agreement, citation coverage, and signal coverage; threshold 0.85), retries
+the weakest agent once with targeted feedback, then escalates to human review or an Opus spot-check that
+fails closed. Every agent has a deterministic rule-based twin, so the LLM scaffolding swaps out
+slot-by-slot without touching anything downstream. *Multi-agent orchestration · LLM-as-interpreter ·
+deterministic eval/oversight · RxNorm · pydantic*
+
 **[RepoBrain](https://github.com/fkenmar/RepoBrain)** — A Rust CLI that compiles a codebase into a
 token-budgeted structural map for LLM coding agents: tree-sitter parse → personalized PageRank over the
 import/reference graph → packed to a token budget, so a 50k-LOC repo becomes a ~2k-token summary an agent
@@ -57,6 +68,13 @@ accuracy** — feeding a weekly-refreshed interactive dashboard. *Data-intensive
 automatic modulation classification on RadioML 2018.01A: the network takes complex I/Q samples, runs an
 FFT *inside* the model, and feeds complex-valued spectral residual blocks, reported down to −20 dB SNR.
 Groundwork for a drone-detection / RF-jamming agent. *DSP × deep learning · complex-valued nets*
+
+**DigitCells OCR pipeline** *(private)* — A custom OCR + validation pipeline that turns scanned pathology
+records into analysis-ready Excel. Generates consistent pseudo-IDs for de-identification, auto-assigns the
+L1–L3 classification hierarchy and codes, and validates every value against a controlled classification
+vocabulary — flagging missing files, out-of-vocab values, and questionable readings for pathologist
+review. Folds full L2 descriptions and patient context into cell comments and tallies category counts per
+level. *Python · OCR · clinical data pipelines · HIPAA-conscious*
 
 ## How I think about the work
 
