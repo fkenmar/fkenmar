@@ -15,7 +15,7 @@ experiment) and half intuition. I like that it keeps a human in the loop.
 Building PDF-to-dataset agent workflows with AI governance over 100k+-record healthcare datasets — schema
 mapping, drug-data API integration, extraction-confidence thresholds, and patient–drug risk logic.
 
-**ML & Bioinformatics Researcher — University at Buffalo** (Samudrala & Ratha labs) · 2026–present
+**ML & Bioinformatics Researcher — University at Buffalo** (Professor Ram Samudrala) · 2026–present
 Ranking therapeutic candidates for muscle-wasting with the CANDO platform and DiffDock molecular docking,
 and investigating frequency-domain (FFT) feature methods to improve model robustness and generalization.
 
