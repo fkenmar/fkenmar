@@ -52,11 +52,6 @@ deterministic eval/oversight · RxNorm · pydantic*
 predict precinct-level crime demand by time of day from ~2.3M NYC Open Data records — **0.908 test
 accuracy** — feeding a weekly-refreshed interactive dashboard. *Data-intensive ML · PySpark · end-to-end*
 
-**[BatMan](https://github.com/fkenmar/BatMan)** — A Fourier-native, phase-preserving baseline for
-automatic modulation classification on RadioML 2018.01A: the network takes complex I/Q samples, runs an
-FFT *inside* the model, and feeds complex-valued spectral residual blocks, reported down to −20 dB SNR.
-Groundwork for a drone-detection / RF-jamming agent. *DSP × deep learning · complex-valued nets*
-
 **DigitCells OCR pipeline** *(private)* — A custom OCR + validation pipeline that turns scanned pathology
 records into analysis-ready Excel. Generates consistent pseudo-IDs for de-identification, auto-assigns the
 L1–L3 classification hierarchy and codes, and validates every value against a controlled classification
