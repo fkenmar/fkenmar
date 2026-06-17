@@ -1,9 +1,3 @@
 ### Hey, I'm Kenmar Francisco
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-fkenmar-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fkenmar/) [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:kenmarfrancisco9@gmail.com) [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-knmrfr-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/knmrfr)
-
-
-
-kenmarfrancisco9@gmail.com · kenmarfr@buffalo.edu · [résumé](resume.pdf)
-
-<sub>Python · Rust · PyTorch · scikit-learn · PySpark · FastAPI · Next.js · React · tree-sitter · Docker</sub>
