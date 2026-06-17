@@ -4,11 +4,11 @@
 
 I am interested in Machine Learning and Agentic AI Engineering. I work in pathology and pharmacolgy.
 
-Building:
-[fkenmar/atlas]
-[fkenmar/venture-pilot]
+Building:  
+  fkenmar/atlas  
+  fkenmar/venture-pilot
 
-Learning:
-[Reinforcement Learning] 
-[Agentic Engineering] 
-[Software Security]
+Learning:  
+  Reinforcement Learning  
+  Agentic Engineering  
+  Software Security
